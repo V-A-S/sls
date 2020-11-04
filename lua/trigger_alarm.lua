@@ -12,9 +12,9 @@ if (Event.State.Name == "water_leak") then
   end
 elseif (Event.State.Name == "contact") then
   if (Event.State.Value == "false" and Event.State.Value ~= Event.State.OldValue) then
-    telegram.send("\xF0\x9F\x94\x93 Дверь \"" .. Event.FriendlyName .. "\" открыта")
+    telegram.send("\xF0\x9F\x94\x93 " .. Event.FriendlyName .. " открыта")
   elseif (Event.State.Value == "true" and Event.State.Value ~= Event.State.OldValue) then
-    telegram.send("\xF0\x9F\x94\x90 Дверь \"" .. Event.FriendlyName .. "\" закрыта")
+    telegram.send("\xF0\x9F\x94\x90 " .. Event.FriendlyName .. " закрыта")
   end
 end
 
