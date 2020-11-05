@@ -1,3 +1,3 @@
 telegram.settoken("TO:KEN")
-telegram.setchat("CAHT_ID")
+telegram.setchat("CHAT_ID")
 
